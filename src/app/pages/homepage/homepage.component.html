@@ -1,0 +1,35 @@
+<nav>
+  <ul>
+    <li>Contatti</li>
+    <li>User</li>
+  </ul>
+</nav>
+
+<section>
+  <div>
+    Lista prodotti
+    <ul>
+      <li *ngFor="let items of prodotti" (click)="selectProduct(items)">
+        {{ items.nome }} - {{ items.prezzo }}
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div>
+    <!-- <app-prod-details
+      (messaggioInviato)="riceviMex($event)"
+      [prodotto]="prodottoSelezionato"
+    ></app-prod-details> -->
+
+    <p>{{ 123456 | currency : "EUR" }}</p>
+  </div>
+  <div><app-ciclo-for [datoDalParent]="messaggio"></app-ciclo-for> 1</div>
+  <div>
+    <h3>Ricevuto dal child</h3>
+    <div>{{ messaggioRicevuto }}</div>
+  </div>
+</section>
+
+<footer>Footer</footer>

@@ -1,0 +1,10 @@
+<h1>Componente ciclofor</h1>
+
+<ul>
+  <li *ngFor="let frutti of fruits; let i = index">{{ i + 1 }},{{ frutti }}</li>
+</ul>
+
+<div *ngFor="let persona of persone; let i = index">
+  <p>{{ i + 1 }}. Nome: {{ persona.nome }} Età: {{ persona.eta }}</p>
+  <p></p>
+</div>

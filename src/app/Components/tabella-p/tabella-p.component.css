@@ -1,0 +1,10 @@
+.table{
+    border: solid 2px black;
+    width: 25px;
+    height: 25px;
+}
+
+thead{
+    border: 1px solid black;
+    background-color: lightgreen;
+}

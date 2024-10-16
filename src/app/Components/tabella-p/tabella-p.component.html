@@ -1,0 +1,12 @@
+<p>tabella-p works!</p>
+
+<table class="table">
+  <thead>
+    <th>Prodotto</th>
+    <th>Prezzo</th>
+  </thead>
+  <tbody *ngFor="let item of prodotti">
+    <td>{{ item.prodotto }}</td>
+    <td>{{ item.prezzo }}</td>
+  </tbody>
+</table>
